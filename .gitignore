@@ -1,0 +1,14 @@
+
+# Private API credentials
+config.js
+.env
+
+# Dependencies
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/

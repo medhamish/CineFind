@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CineFind</h1>
+   <div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search movies... e.g. Interstellar"
+    >
+    <button onclick="searchMovies()">Search</button>
+</div>
+
+<div id="genres" class="genre-list"></div>
+
+<div class="trending-controls">
+    <button class="trend-btn active" data-period="day">
+        Trending Today     </button>
+
+    <button class="trend-btn" data-period="week">
+        Trending This Week 
+    </button>
+</div>
+
+<div class="watchlist-nav">
+    <button id="watchlistBtn" class="trend-btn">
+         My Watchlist
+    </button>
+</div>
+
+<h2 id="sectionTitle">Popular Movies</h2>
+
+<div id="movies"></div>
+
+
+<!-- Movie Details Modal -->
+<div id="movieModal" class="modal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">×</button>
+        <div id="movieDetails"></div>
+    </div>
+</div>
+
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
