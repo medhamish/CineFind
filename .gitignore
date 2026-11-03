@@ -1,6 +1,5 @@
 
 # Private API credentials
-config.js
 .env
 
 # Dependencies
